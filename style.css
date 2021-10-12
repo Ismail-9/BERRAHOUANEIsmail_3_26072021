@@ -327,6 +327,10 @@ body {
     margin-bottom: 2rem;
 }
 
+#FONCTIONNEMENT-ETAPE {
+    background: #f5edff;
+}
+
 .FONCTIONNEMENT__NOMBRES {
     background-color: #9356dc;
     color: white;
