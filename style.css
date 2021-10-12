@@ -369,6 +369,14 @@ body {
     margin-top: 1.625rem;
 }
 
+.FONCTIONNEMENT__SPAN {
+    font-family: "Roboto";
+}
+
+#FONCTIONNEMENT__ICONEVIOLET {
+    color: #9356dc;
+}
+
 
 /* SECTION RESTAURANTS */
 
