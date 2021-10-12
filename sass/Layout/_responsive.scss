@@ -1,0 +1,38 @@
+// Responsive //
+
+@media screen and (min-width: 900px) {
+    .CARTES {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        -ms-grid-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.313rem;
+    }
+
+    .FONCTIONNEMENT__ETAPE {
+        width: 100%;
+    }
+    .FONCTIONNEMENT__ETAPES {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+// RESPONSIVES PAGES MENU //
+@media screen and (min-width: 1300px) {
+    .MENU-MAIN {
+        margin-top: -4.313rem;
+    }
+    .MENU-MAIN__BLOC {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .FIGURE-MENU__IMAGE {
+        margin-top: 0;
+    }
+}

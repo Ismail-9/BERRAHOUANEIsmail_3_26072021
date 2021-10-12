@@ -1,0 +1,157 @@
+// ANIMATIONS LOADER PAGES ACCUEIL //
+
+.loading {
+  $colors: #9356dc, #ff79da, #99e2d0, #0f52ba, #000080;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  animation: loader 0.01s;
+  animation-delay: 1.75s;
+  animation-fill-mode: both;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  .dot {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    margin: 0.8em;
+    border-radius: 50%;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: inherit;
+      animation: wave 2s ease-out infinite;
+    }
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        background: nth($colors, $i);
+
+        &::before {
+          animation-delay: $i * 0.2s;
+        }
+      }
+    }
+  }
+}
+
+@keyframes wave {
+  50%,
+  75% {
+    transform: scale(2.5);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+// ANIMATIONS SASS PAGES MENU //
+
+.APPARITION-PROGRESSIVE-1 {
+  animation-delay: 0.1s;
+}
+.APPARITION-PROGRESSIVE-2 {
+  animation-delay: 0.2s;
+}
+.APPARITION-PROGRESSIVE-3 {
+  animation-delay: 0.3s;
+}
+.APPARITION-PROGRESSIVE-4 {
+  animation-delay: 0.4s;
+}
+.APPARITION-PROGRESSIVE-5 {
+  animation-delay: 0.5s;
+}
+.APPARITION-PROGRESSIVE-6 {
+  animation-delay: 0.6s;
+}
+.APPARITION-PROGRESSIVE-7 {
+  animation-delay: 0.7s;
+}
+.APPARITION-PROGRESSIVE-8 {
+  animation-delay: 0.8s;
+}
+.APPARITION-PROGRESSIVE-9 {
+  animation-delay: 0.9s;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes cloche-validation {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(-50px);
+    transform: scaleX(-50px);
+  }
+}
+
+@keyframes cloche-validation {
+  0% {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+  }
+}
+
+@-webkit-keyframes apparition-progressive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes apparition-progressive {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,119 @@
+.EMPLACEMENT {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem 0 1.25rem 0.625rem;
+    background-color: #f3f3f3;
+    position: relative;
+
+    &__ICONE {
+        margin-bottom: 0.188rem;
+        margin-right: 0.813rem;
+    }
+    &__VILLE {
+        margin-left: 0.813rem;
+        font-weight: 700;
+        color: #7a7a7a;
+    }
+}
+
+.RESERVATION {
+    background: #f6f6f6;
+    width: 100%;
+    padding: 1rem 0rem 3rem 0rem;
+    &__BLOC {
+        width: 100%;
+        padding: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3.125rem 0;
+    }
+    &__H2 {
+        text-align: center;
+        max-width: 15.625rem;
+        margin: 0;
+    }
+    &__P {
+        text-align: center;
+    }
+    &__EXPLORATION {
+        color: white;
+        background-color: #686868;
+        background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+        margin-top: 1em;
+        font-size: 1em;
+        padding: 0 1.25rem;
+        border-radius: 12.5rem;
+        -webkit-box-shadow: 0.25rem 0.25rem 0.625rem rgb(0 0 0 / 25%);
+        box-shadow: 0.25rem 0.25rem 0.625rem rgb(0 0 0 / 25%);
+        border: none;
+        height: 3.375rem;
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-box-shadow: 0.25rem 0.25rem 0.625rem 0.25rem rgb(0 0 0 / 40%);
+            box-shadow: 0.25rem 0.25rem 0.625rem 0.25rem rgb(0 0 0 / 40%);
+        }
+    }
+}
+
+.FONCTIONNEMENT__SECTION {
+    padding: 1.563rem 0;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.FONCTIONNEMENT {
+    width: 95%;
+    max-width: 75rem;
+    background-color: white;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    &__H2 {
+        margin: 0;
+    }
+    &__ETAPE {
+        display: flex;
+        align-items: center;
+        background: #f6f6f6;
+        height: auto;
+        width: auto;
+        margin: 0.625rem 1.25rem;
+        border-radius: 1.25rem;
+        box-shadow: 0.25rem 0.25rem 0.625rem rgb(0 0 0 / 25%);
+        &:hover {
+            opacity: 0.8;
+            cursor: pointer;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            -webkit-box-shadow: 0.25rem 0.25rem 0.625rem 0.25rem rgb(0 0 0 / 40%);
+            box-shadow: 0.25rem 0.25rem 0.625rem 0.25rem rgb(0 0 0 / 40%);
+            background: white;
+        }
+    }
+    &__NOMBRES {
+        background-color: $color-primary;
+        color: white;
+        position: absolute;
+        padding: 0.188em 0.5rem 0.188em 0.5rem;
+        border-radius: 1.25rem;
+        transform: translateX(-50%);
+    }
+    &__I {
+        color: #7e7e7e;
+        margin: 0 1.25rem;
+    }
+    &__ETAPES {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
