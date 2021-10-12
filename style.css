@@ -324,20 +324,10 @@ body {
 }
 
 .FONCTIONNEMENT--ETAPE {
-    margin-bottom: 2;
+    margin-bottom: 2rem;
 }
 
 .FONCTIONNEMENT__NOMBRES {
-<<<<<<< HEAD
-  background-color: #9356dc;
-  color: white;
-  position: absolute;
-  padding: 0.188rem 0.5rem 0.188rem 0.5rem;
-  border-radius: 31.25rem;
-  font-style: normal;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-=======
     background-color: #9356dc;
     color: white;
     position: absolute;
@@ -346,7 +336,14 @@ body {
     font-style: normal;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
->>>>>>> af58f491dff9ff4c01cc2d57a3b8875d4410531e
+    background-color: #9356dc;
+    color: white;
+    position: absolute;
+    padding: 0.188rem 0.5rem 0.188rem 0.5rem;
+    border-radius: 31.25rem;
+    font-style: normal;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .FONCTIONNEMENT__I {
