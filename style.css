@@ -318,6 +318,7 @@ body {
   position: absolute;
   padding: 0.188rem 0.5rem 0.188rem 0.5rem;
   border-radius: 31.25rem;
+  font-style: normal;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }

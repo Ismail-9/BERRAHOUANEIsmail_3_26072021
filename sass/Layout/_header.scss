@@ -6,22 +6,17 @@
     display: grid;
     grid-template-rows: 5em;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "Vide1 Logo Vide2"
-    
-    &__LIEN {
+    grid-template-areas: "Vide1 Logo Vide2" &__LIEN {
         grid-area: LogoEntete;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     &__H1 {
         color: black;
         text-align: center;
         font-size: 2em;
-        font-family: "Shrikhand", "cursive","sans-serif";  
+        font-family: "Shrikhand", "cursive", "sans-serif";
         margin-bottom: 0.625rem;
-      }
     }
 }
-
